@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Version;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -28,4 +29,15 @@ public class Holding {
 
     @Column("avg_buy_price")
     private BigDecimal avgBuyPrice;
+
+    @Version
+    private Long version;
+
+    public Holding(Long id, Long userId, Long stockId, Long quantity, BigDecimal price) {
+        this.id = id;
+        this.userId = userId;
+        this.stockId = stockId;
+        this.quantity = quantity;
+        this.avgBuyPrice = price;
+    }
 }

@@ -9,7 +9,7 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.math.BigDecimal;
 
-@Table("stock")
+@Table("stocks")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -46,7 +46,7 @@ A robust engine for executing BUY/SELL orders.
 ### Prerequisites
 * Docker & Docker Compose
 * JDK 21
-* Maven
+* Gradle
 
 ### Step 1: Clone and Start Infrastructure
 ```bash
